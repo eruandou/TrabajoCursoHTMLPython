@@ -14,8 +14,8 @@ body {
 }
 .formulario{
     background: #fff;
-    margin-top: 150px;
-    padding: 3px;
+    margin-top: 9.37rem;
+    padding: 0.18rem;
     background-color: rgba(241, 227, 194, 0.3);
     color: azure;
     font-size: x-large;
@@ -83,26 +83,167 @@ p{
 .link:hover{
      color: cadetblue;
 }
-@media(min-width:768px)
+
+
+.btn-success:hover
 {
-    .formulario{
-        margin: auto;
-        width: 500px;
-        margin-top: 150px;
-        border-radius: 2%;
-    }
+    transition: all 1s;
+    box-shadow:0.2rem 0.2rem 0.8rem #aaa ;
+    background-color: darkgreen;
 }
 
 
 
+@font-face {
+    font-family: 'icomoon';
+    src:  url('/fonts/icomoon.eot?kgy68e');
+    src:  url('/fonts/icomoon.eot?kgy68e#iefix') format('embedded-opentype'),
+      url('/fonts/icomoon.ttf?kgy68e') format('truetype'),
+      url('/fonts/icomoon.woff?kgy68e') format('woff'),
+      url('/fonts/icomoon.svg?kgy68e#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook2:before {
+    content: "\ea91";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  
+.logo{
+margin: 0 auto;
+display: block;
+}
 
+.social-bar
+{
+  left: 0;
+  display: inline-block;
+}
 
+.icon
+{
+  color: #2E406E;
+  padding: 7;
+  text-decoration: none;
+}
+.icon-facebook2
+{
+  background: white;
+}
+.icon-twitter
+{
+  color: lightskyblue;
+}
+.icon-instagram
+{
+  color: purple;
+}
 
+footer > *
+{
+  width: 100%;
+}
 
+.comentarios {
+  height: 6rem;
+}
 
+@media(min-width:768px)
+{
+  .formulario{
+    width: 90%;
+    margin: 10% auto;
+  }
 
+  nav{
+    width: 100%;
+  }
 
+#saludo
+{
+  position:absolute;
+  margin-top: -30px;
+  
+}
+.botones-navegacion
+{
+    position:absolute;
+    margin-top: 50px;
+}
 
+.logo-container
+{
+  float: right;
+  right: 0;
+  z-index: 1;
+}
+
+}
+
+@media screen and (max-width: 480px){
+  .formulario{
+    width: 90%;
+    margin: 10% auto;
+    font-size: 1.2rem;
+  }
+
+  nav{
+    width: 100%;
+  }
+
+#saludo
+{
+  position:absolute;
+  margin-top: -30px;
+}
+.botones-navegacion
+{
+    position:absolute;
+    margin-top: 50px;
+}
+
+.logo-container
+{
+  float: right;
+  right: 0;
+  z-index: 1;
+}
+
+.table
+{
+  width: 90%;
+  margin: 10px auto;
+  font-size: 1.2rem;
+}
+
+.archivos
+{
+  font-size: 10px;
+}
+
+}
 
 
 

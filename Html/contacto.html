@@ -14,59 +14,48 @@
     <link rel="icon" type="image/png" href="/Img/icono2.png"/>
 </head>
 
-<nav class="navbar-expand-sm d-flex bg-warning border-bottom">
-    <div id="barra-navegacion" class="container-fluid d-flex align-items-center ">
-    <h3 id="saludo"> Bienvenidos</h3>
-    
-        <div class="botones-navegacion">
-          <a name="inicio" href="index.html" class="btn btn-success"> Inicio </a>
-          <a href="productos.html" class="btn btn-success"> Ver productos </a>
-          <a href="contacto.html" class="btn btn-success"> Contactanos </a>
-        </div>
-    </div> 
-    
-<div class="logo-container">
-    <img src="/Img/logo.jpeg" alt="Logo" style="width: 100px"  class="rounded-pill">
-  </div>
-</nav>
+<body>
+    <nav class="navbar-expand-sm d-flex bg-warning border-bottom">
+        <div id="barra-navegacion" class="container-fluid d-flex align-items-center ">
+        <h3 id="saludo"> Bienvenidos</h3>
+        
+            <div class="botones-navegacion">
+              <a name="inicio" href="index.html" class="btn btn-success"> Inicio </a>
+              <a href="productos.html" class="btn btn-success"> Ver productos </a>
+              <a href="agregar.html" class="btn btn-success"> Agregar producto </a>
+            </div>
+        </div> 
+        
+    <div class="logo-container">
+        <img src="/Img/logo.jpeg" alt="Logo" style="width: 100px"  class="rounded-pill">
+      </div>
+    </nav>
 
     <section>
         <div class="formulario">
-            <h1>Agregar Producto</h1>
-            <form th:action="@{#}" method="POST">
+            <h1>Contactate con nostros</h1>
+            <form action="mailto:fcipolla608@gmail.com?subject=motivo" method="post" enctype="text/plain" autocomplete="on">
 
                 <div class="form-group">
-                    <label>Nombre Producto</label> <input type="text" class="form-control"
+                    <label>Tu nombre completo</label> <input type="text" class="form-control"
                         name="nombre">
                 </div>
 
                 <div class="form-group">
-                    <label>Categoria</label> <input type="text" class="form-control" name="categoria">
+                    <label>Mail</label> <input type="email" class="form-control"
+                        name="mail">
                 </div>
 
                 <div class="form-group">
-                    <label>Pequeña Descripcion</label> <input type="text" class="form-control"
-                        name="descripcion">
+                    <label>Motivo de la consulta</label> <input type="text" class="form-control"
+                        name="motivo">
                 </div>
 
                 <div class="form-group">
-                    <label>Precio</label> <input  type="number" class="form-control"
-                        name="precio">
+                    <label>Consulta</label> <textarea name="comentarios" class="comentarios form-control" name="categoria"> </textarea>
                 </div>
 
-                <div class="d-flex">
-                    <div class="">
-                        <label for="Image" class="form-label mt-3">Aqui agregue la imagen</label>
-                        <div class="d-flex">
-                            <input class="form-control " type="file" id="formFile" onchange="preview()" name="foto">
-                        </div>
-                    </div>
-                    <div class="m-3">
-                        <img id="frame" class="m" src="" style="width: 100px; height: 100px;" />
-                    </div>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Guardar</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
 
             <a href= "#inicio"><button type="text" class="btn btn-primary">Inicio</button></a>
