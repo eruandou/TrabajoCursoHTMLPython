@@ -202,7 +202,7 @@ footer > *
 
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 500px){
   .formulario{
     width: 90%;
     margin: 10% auto;
@@ -245,7 +245,60 @@ footer > *
 
 }
 
+@media screen and (max-width: 400px){
+  .formulario{
+    width: 90%;
+    margin: 10% auto;
+    font-size: 1.2rem;
+  }
 
+  nav{
+    width: 100%;
+  }
+
+.logo-container
+{
+  display: inline-flex;
+  width: 68px;
+  height: 68px;
+}
+
+.btn.btn-success
+{
+  font-size: 80%;
+}
+
+#saludo
+{
+  position:absolute;
+  margin-top: -30px;
+}
+.botones-navegacion
+{
+    position:absolute;
+    margin-top: 30px;
+}
+
+.logo-container
+{
+  float: right;
+  right: 0;
+  z-index: 1;
+}
+
+.table
+{
+  width: 90%;
+  margin: 10px auto;
+  font-size: 1.2rem;
+}
+
+.archivos
+{
+  font-size: 10px;
+}
+
+}
 
 
 
