@@ -572,6 +572,11 @@ footer > *
     width: 100%;
   }
 
+  .navbar-expand-sm.d-flex.bg-warning.border-bottom
+  {
+    height: 100px;
+  }
+
 .logo-container
 {
   display: inline-flex;
@@ -587,12 +592,12 @@ footer > *
 #saludo
 {
   position:absolute;
-  margin-top: -30px;
+  margin-top: -60px;
 }
 .botones-navegacion
 {
     position:absolute;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .logo-container
