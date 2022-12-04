@@ -10,13 +10,13 @@ body {
 }
 .contenedor{
     width: 100%;
-    padding: 15px;
+    padding: 15%;
 }
 .formulario{
     background: #fff;
-    margin-top: 9.37rem;
+    margin-top: 2.37%;
     margin-bottom: 0.37%;
-    padding: 0.18rem;
+    padding: 0.50%;
     background-color: rgba(241, 227, 194, 0.3);
     color: azure;
     font-size: x-large;
@@ -304,10 +304,7 @@ footer > *
   text-align:center;
   margin: 0 auto;
   display: block;
-
 }
-
-
 }
 
 

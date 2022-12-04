@@ -10,6 +10,30 @@ recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 
+//Validation
+function valida_envia(){
+    if (document.fvalida.nombre.value.length==0){
+           alert("Tiene que escribir su nombre")
+           document.fvalida.nombre.focus()
+           return 0;
+    }
+}
+edad = document.fvalida.edad.value
+   	edad = validarEntero(edad)
+   	document.fvalida.edad.value=edad
+   	if (edad==""){
+      		alert("Tiene que introducir un número entero en su edad.")
+      		document.fvalida.edad.focus()
+      		return 0;
+   	}else{
+      		if (edad<18){
+         			alert("Debe ser mayor de 18 años.")
+         			document.fvalida.edad.focus()
+         			return 0;
+      		}
+   	}
+       alert("Muchas gracias por enviar el formulario");
+   	document.fvalida.submit();
 
 // get meal list that matches with the ingredients
 function getMealList(){
